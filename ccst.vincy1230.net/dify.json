@@ -1,0 +1,63 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "CourseComparator 入库工具",
+        "description": "CourseComparator 入库工具",
+        "version": "v0.1.0"
+    },
+    "servers": [
+        {
+            "url": "https://ccst.vincy1230.net"
+        }
+    ],
+    "paths": {
+        "/upload": {
+            "post": {
+                "description": "上传课程数据，完成入库",
+                "operationId": "upload",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "major": {
+                                        "type": "string",
+                                        "description": "专业"
+                                    },
+                                    "jie": {
+                                        "type": "string",
+                                        "description": "届"
+                                    },
+                                    "csv_string": {
+                                        "type": "string",
+                                        "description": "学期 csv 总表（### 分割）"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "成功"
+                    },
+                    "400": {
+                        "description": "请求参数错误"
+                    },
+                    "401": {
+                        "description": "未授权"
+                    },
+                    "403": {
+                        "description": "禁止访问"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {}
+    }
+}

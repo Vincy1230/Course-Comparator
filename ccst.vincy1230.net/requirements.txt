@@ -1,0 +1,3 @@
+pip
+uvicorn[standard]==0.20.0
+fastapi[all]
