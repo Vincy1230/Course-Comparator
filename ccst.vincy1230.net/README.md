@@ -1,4 +1,4 @@
-# LLM-Graph
+# LLM-Graph (以不含迭代的单步流程为例)
 
 `CourseComparator 自动录入`  
 CourseComparator 课程比较器用于比较不同的专业、届别或年级之间的课程设置，供转专业、降级学生确认可冲抵及需补修的课程。此处是该比较器的录入工具。
