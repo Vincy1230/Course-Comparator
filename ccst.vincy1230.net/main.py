@@ -71,7 +71,10 @@ def upload(data: DataInput) -> PlainTextResponse:
                     writer.writerow([i] + row.split(","))
 
     # 返回下载链接
-    download_url = f"{BASE_URL}/zips/{data.major}.{data.jie}.zip"
+    download_url = f"> zip 副本下载链接  \n"
+    download_url += f"[{BASE_URL}/zips/{data.major}.{data.jie}.zip]({BASE_URL}/zips/{data.major}.{data.jie}.zip)  \n"
+    download_url += f"> csv总表下载链接  \n"
+    download_url += f"[{BASE_URL}/summary/{data.major}.{data.jie}.csv]({BASE_URL}/summary/{data.major}.{data.jie}.csv)"
     return PlainTextResponse(download_url)
 
 
