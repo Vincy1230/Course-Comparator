@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CourseComparator"
+version = "0.1.1"
+description = "用于比较不同的专业、届别或年级之间的课程设置，供转专业、降级学生确认可冲抵及需补修的课程。"
+authors = [{ name = "Vincy SHI", email = "vincy@vincy1230.net" }]
+readme = "README.md"
+license = "MIT"
+dependencies = []       
+
+[tool.setuptools.packages.find]
+include = ["CourseComparator*"]
+
+[project.urls]
+Homepage = "https://github.com/vincy1230/Course-Comparator"

@@ -19,5 +19,9 @@ __pycache__/
 # CourseComparator
 __cc_cache__/
 
+# pypi
+dist/
+*.egg-info/
+
 # data
 data/
