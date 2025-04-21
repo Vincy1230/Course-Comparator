@@ -1,5 +1,5 @@
 import os
-import CourseComparator as cc
+import CourseComparator as cc  # pip install CourseComparator
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(current_dir, "data")
