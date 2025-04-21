@@ -1,4 +1,5 @@
 import os
+from SECRET import BASE_URL, TOKEN
 import CourseComparator as cc  # pip install CourseComparator
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -11,7 +12,13 @@ else:
     print(f"已设置数据集路径: {data_path}")
     data_dir = data_path
 
-loader = cc.init(data_dir)
+# loader = cc.init(data_dir)
+
+loader = cc.init_internet(
+    BASE_URL,
+    TOKEN,
+    "./__cc_cache__",
+)
 
 print("\n请依次输入专业、届别、学期。例如，人工智能专业 2021 级第 4 学期，输入：")
 print("人工智能 2021 4 \n")

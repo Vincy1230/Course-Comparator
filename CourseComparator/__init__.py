@@ -19,7 +19,7 @@ from .cc_classes import (
     CourseSetDelta,
 )
 
-from .cc_functions import init, EMPTY_SEMESTER
+from .cc_functions import init, init_internet, EMPTY_SEMESTER
 
 __all__ = [
     "Course",
@@ -27,6 +27,7 @@ __all__ = [
     "CourseSet",
     "CourseSetDelta",
     "init",
+    "init_internet",
     "EMPTY_SEMESTER",
 ]
 
