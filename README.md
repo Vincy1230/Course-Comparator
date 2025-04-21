@@ -47,6 +47,13 @@ import CourseComparator as cc
 # 传入数据集根目录，初始化数据加载器
 loader = cc.init("<数据集根目录>")
 
+# 或：传入网络接口的 base_url 和 token，初始化为网络数据加载器
+# loader = cc.init_internet(
+#     "<base_url>",
+#     "<your_token_here>",
+#     "./__cc_cache__",
+# )
+
 # 获取旧的课程方案
 old_courses = loader("<专业>", "<届别>", <学期>)
 

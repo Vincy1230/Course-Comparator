@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "CourseComparator"
-version = "0.1.1"
+version = "0.1.2"
 description = "用于比较不同的专业、届别或年级之间的课程设置，供转专业、降级学生确认可冲抵及需补修的课程。"
 authors = [{ name = "Vincy SHI", email = "vincy@vincy1230.net" }]
 readme = "README.md"
